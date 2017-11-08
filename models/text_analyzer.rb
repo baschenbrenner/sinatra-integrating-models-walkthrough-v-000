@@ -21,6 +21,6 @@ class TextAnalyzer
     self.text.split(" ").join("").split("")
     binding.pry
   end
-  
+
 
 end
