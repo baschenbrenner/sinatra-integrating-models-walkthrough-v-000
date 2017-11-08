@@ -28,13 +28,15 @@ class TextAnalyzer
     end
     max_letter="a"
     max_letter_number=0
-    
+
     letter_comparison.each {|key,value|
       if value>max_letter_number
         max_letter=key
         max_letter_number=value
       end
-      
+    }
+    @max_letter = max_letter
+    @max_letter_number= max_letter_number
   end
 
 
