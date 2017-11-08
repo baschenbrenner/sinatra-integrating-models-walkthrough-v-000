@@ -19,7 +19,7 @@ class TextAnalyzer
 
   def most_used_letter
     self.text.split(" ").join("").split("")
-    binding.pry
+    
     letter_comparison={}
     letters_to_check = self.text.split(" ").join("").split("").uniq
     letters_to_check.each do |letter|
