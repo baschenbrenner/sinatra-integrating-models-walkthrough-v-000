@@ -35,8 +35,8 @@ class TextAnalyzer
         max_letter_number=value
       end
     }
-    @max_letter = max_letter
-    @max_letter_number= max_letter_number
+    most_used_letter =[max_letter,max_letter_number]
+    
   end
 
 
