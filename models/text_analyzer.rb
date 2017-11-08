@@ -20,6 +20,21 @@ class TextAnalyzer
   def most_used_letter
     self.text.split(" ").join("").split("")
     binding.pry
+    letter_comparison={}
+    letters_to_check = self.text.split(" ").join("").split("").uniq
+    letters_to_check.each do |letter|
+      text.split(" ").join("").split("").select {|x| x == letter }.length
+      letter_comparison[letter]=text.split(" ").join("").split("").select {|x| x == letter }.length
+    end
+    max_letter="a"
+    max_letter_number=0
+    
+    letter_comparison.each {|key,value|
+      if value>max_letter_number
+        max_letter=key
+        max_letter_number=value
+      end
+      
   end
 
 
