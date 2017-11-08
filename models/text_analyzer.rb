@@ -8,5 +8,11 @@ class TextAnalyzer
   def count_of_words
     self.text.split(" ").count
   end
-  
+
+  def count_of_vowels
+    self.text.scan(/[aeiou]/).count
+  end
+
+  def count_of_consonants
+  end
 end
