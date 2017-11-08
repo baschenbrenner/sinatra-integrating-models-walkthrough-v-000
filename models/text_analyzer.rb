@@ -18,6 +18,8 @@ class TextAnalyzer
   end
 
   def most_used_letter
+    self.text.split(" ").join("").split("")
+    binding.pry
   end
   
 
